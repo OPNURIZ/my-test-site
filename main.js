@@ -4,24 +4,24 @@ document.addEventListener('DOMContentLoaded', () => {
   const eutteumContainer = document.getElementById('eutteum-gif-container');
   const amyContainer = document.getElementById('amy-gif-container');
 
-  // 으뜸이 GIF 목록 전체 업데이트
+  // 진짜 흔한남매 GIF 주소를 여기에 넣으면 돼!
   const eutteumGifs = [
-    'https://media1.tenor.com/m/h24uJMj25-gAAAAC/%ED%9D%94%ED%95%9C%EB%82%A8%EB%A7%A4-%EC%9C%BC%EB%9C%B0.gif',
+    'https://media1.tenor.com/m/h24uJMj25-gAAAAC/%ED%9D%94%ED%95%9C%EB%82%A8%EB%A7%A4-%EC%9C%BC%EB%9C%B0.gif', // 내가 찾은 진짜 GIF 주소!
     'https://media1.tenor.com/m/y50-nJIL2-0AAAAC/%EB%83%A3%ED%95%98-%ED%9D%94%ED%95%9C%EB%82%A8%EB%A7%A4.gif',
-    'https://media.tenor.com/dZ9a-l2pNAYAAAAM/heunhan-nammae.gif'
+    ' 여기에 구글이나 Tenor에서 찾은 세 번째 GIF 주소를 붙여넣으세요 '
   ];
 
-  // 에이미 GIF 목록 전체 업데이트
   const amyGifs = [
-    'https://media1.tenor.com/m/wD29_mtD8pAAAAAC/%EC%97%90%EC%9D%B4%EB%AF%B8-%ED%9D%94%ED%95%9C%EB%82%A8%EB%A7%A4.gif',
-    'https://media.tenor.com/yS5Y8YyO9j4AAAAM/heunhan-nammae.gif',
-    'https://media.tenor.com/4g3D4c3aM_sAAAAM/heunhan-nammae.gif'
+    'https://media1.tenor.com/m/wD29_mtD8pAAAAAC/%EC%97%90%EC%9D%B4%EB%AF%B8-%ED%9D%94%ED%95%9C%EB%82%A8%EB%A7%A4.gif', // 내가 찾은 진짜 에이미 GIF!
+    ' 여기에 두 번째 에이미 GIF 주소를 붙여넣으세요 ',
+    ' 여기에 세 번째 에이미 GIF 주소를 붙여넣으세요 '
   ];
 
   function showRandomGif(container, gifArray) {
+    // 유효한 URL만 필터링
     const validGifs = gifArray.filter(url => url.startsWith('http'));
     if (validGifs.length === 0) {
-        container.innerHTML = '표시할 GIF가 없어요!';
+        container.innerHTML = '표시할 GIF가 없어요! main.js 파일에 진짜 GIF 주소를 넣어주세요.';
         return;
     }
     
