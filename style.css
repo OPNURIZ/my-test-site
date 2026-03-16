@@ -25,6 +25,12 @@ p {
     color: #ccc;
 }
 
+.privacy-notice {
+    font-size: 0.8em;
+    color: #666;
+    margin-top: 5px;
+}
+
 textarea {
     width: 80%;
     height: 100px;
@@ -68,6 +74,15 @@ button:hover {
     color: #aaa;
 }
 
+.anger-image {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: anger-animation 2s forwards;
+    z-index: 9999;
+}
+
 @keyframes fadeOut {
     from {
         opacity: 1;
@@ -76,5 +91,20 @@ button:hover {
     to {
         opacity: 0;
         transform: translate(-50%, -100px) scale(1.5);
+    }
+}
+
+@keyframes anger-animation {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.5);
+    }
+    50% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1.2) rotate(10deg);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.5) rotate(-10deg);
     }
 }

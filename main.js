@@ -13,8 +13,17 @@ voidButton.addEventListener('click', () => {
 
         voidInput.value = '';
 
+        const angerImage = document.createElement('img');
+        angerImage.src = '/images/anger.gif';
+        angerImage.classList.add('anger-image');
+        document.body.appendChild(angerImage);
+
         setTimeout(() => {
             echo.remove();
         }, 5000);
+
+        setTimeout(() => {
+            angerImage.remove();
+        }, 2000);
     }
 });
