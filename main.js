@@ -14,7 +14,7 @@ voidButton.addEventListener('click', () => {
         voidInput.value = '';
 
         const angerImage = document.createElement('img');
-        angerImage.src = '/images/anger.gif';
+        angerImage.src = 'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNTM3M2I0ZDUzY2U3YjMyODE4ZWY1ODc4MmY5YjRjY2IxZjQzMmY5ZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/11tTNkNy1SdXGg/giphy.gif';
         angerImage.classList.add('anger-image');
         document.body.appendChild(angerImage);
 
