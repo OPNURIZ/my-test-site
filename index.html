@@ -1,77 +1,19 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>코딩 학습 추천 사이트</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>심연의 메아리</title>
+  <link href='/style.css' rel='stylesheet'>
 </head>
 <body>
-    <header>
-        <h1>코딩 학습 추천 사이트</h1>
-        <div id="qrcode"></div>
-    </header>
-    <main>
-        <section id="comprehensive-platforms">
-            <h2>종합 학습 플랫폼</h2>
-            <div class="card-container">
-                <div class="card">
-                    <h3>freeCodeCamp</h3>
-                    <a href="https://www.freecodecamp.org/" target="_blank">방문하기</a>
-                </div>
-                <div class="card">
-                    <h3>GitHub</h3>
-                    <a href="https://github.com/" target="_blank">방문하기</a>
-                </div>
-                <div class="card">
-                    <h3>Stack Overflow</h3>
-                    <a href="https://stackoverflow.com/" target="_blank">방문하기</a>
-                </div>
-            </div>
-        </section>
-        <section id="browser-based-tools">
-            <h2>브라우저 기반 도구</h2>
-            <div class="card-container">
-                <div class="card">
-                    <h3>Firebase Studio</h3>
-                    <a href="https://firebase.google.com/docs/studio" target="_blank">방문하기</a>
-                </div>
-                <div class="card">
-                    <h3>Python Tutor</h3>
-                    <a href="http://pythontutor.com/" target="_blank">방문하기</a>
-                </div>
-                <div class="card">
-                    <h3>Colab</h3>
-                    <a href="https://colab.research.google.com/" target="_blank">방문하기</a>
-                </div>
-                <div class="card">
-                    <h3>CodePen</h3>
-                    <a href="https://codepen.io/" target="_blank">방문하기</a>
-                </div>
-            </div>
-        </section>
-        <section id="in-depth-courses">
-            <h2>심층 학습 과정</h2>
-            <div class="card-container">
-                <div class="card">
-                    <h3>Mimo</h3>
-                    <a href="https://mimo.org/" target="_blank">방문하기</a>
-                </div>
-                <div class="card">
-                    <h3>노마드코더</h3>
-                    <a href="https://nomadcoders.co/" target="_blank">방문하기</a>
-                </div>
-            </div>
-        </section>
-    </main>
-    <script>
-        new QRCode(document.getElementById("qrcode"), {
-            text: window.location.href,
-            width: 100,
-            height: 100,
-        });
-    </script>
+  <div class="container">
+    <h1>심연의 메아리</h1>
+    <p>어차피 아무도 듣지 않아. 네 안의 불경스러운 생각, 분노, 냉소를 이곳에 쏟아내.</p>
+    <textarea id="void-input" placeholder="세상에 할 말이 있나?"></textarea>
+    <button id="void-button">공허 속으로 던지기</button>
+    <div id="echo-chamber"></div>
+  </div>
+  <script defer type="text/javascript" src="/main.js"></script>
 </body>
 </html>
