@@ -3,51 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>흔한남매 팬페이지</title>
+  <title>심연의 메아리</title>
   <link href='/style.css' rel='stylesheet'>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>😂</text></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💀</text></svg>">
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>흔한남매 팬페이지</h1>
-      <p>오리지널 vs 만화 캐릭터 비교 & 유행어 사전</p>
-    </header>
-
-    <main>
-      <section class="character-section" id="eutteum">
-        <h2>으뜸 (오빠)</h2>
-        <div class="character-intro">
-          <p><strong>오리지널:</strong> 장난기 넘치는 현실 오빠. 에이미를 놀리는 게 삶의 낙이지만, 은근히 동생을 아낀다.</p>
-          <p><strong>만화 버전:</strong> 좀 더 과장된 개그 캐릭터. 바나나를 엄청나게 좋아하며, 다양한 발명품(?)을 만들어낸다.</p>
-        </div>
-        <h3>대표 유행어</h3>
-        <ul>
-          <li>냐하~!</li>
-          <li>아이고 배야~</li>
-          <li>이건 못 참지~</li>
-        </ul>
-        <button id="eutteum-gif-button">으뜸이 랜덤짤 보기!</button>
-        <div class="gif-container" id="eutteum-gif-container"></div>
-      </section>
-
-      <section class="character-section" id="amy">
-        <h2>에이미 (동생)</h2>
-        <div class="character-intro">
-          <p><strong>오리지널:</strong> 오빠의 장난에 발끈하지만, 결국 같이 웃고 마는 착한 동생. 먹을 것을 좋아한다.</p>
-          <p><strong>만화 버전:</strong> 오빠를 향한 '참교육' 전문가. 똑 부러지는 모습을 보이지만, 가끔 허당미를 보여준다.</p>
-        </div>
-        <h3>대표 유행어</h3>
-        <ul>
-          <li>오빠 미워!</li>
-          <li>에이미 참교육 들어갑니다~</li>
-          <li>빵꾸똥꾸야!</li>
-        </ul>
-        <button id="amy-gif-button">에이미 랜덤짤 보기!</button>
-        <div class="gif-container" id="amy-gif-container"></div>
-      </section>
-    </main>
-  </div>
-  <script defer type="text/javascript" src="/main.js"></script>
+ <div class="container">
+   <h1>심연의 메아리</h1>
+   <p>어차피 아무도 듣지 않아. 네 안의 불경스러운 생각, 분노, 냉소를 이곳에 쏟아내.</p>
+   <textarea id="void-input" placeholder="세상에 할 말이 있나?"></textarea>
+   <p class="privacy-notice">당신의 생각은 공허 속에 흩어질 뿐, 어디에도 저장되지 않습니다.</p>
+   <button id="void-button">공허 속으로 던지기</button>
+   <div id="echo-chamber"></div>
+ </div>
+ <script defer type="text/javascript" src="/main.js"></script>
 </body>
 </html>

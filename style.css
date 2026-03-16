@@ -1,95 +1,110 @@
+
 body {
-  font-family: 'Do Hyeon', sans-serif; /* 귀여운 느낌의 폰트 */
-  background-color: #fdf0d5; /* 따뜻한 배경색 */
-  color: #333;
-  line-height: 1.6;
-  margin: 0;
-  padding: 20px;
+    font-family: 'Nanum Gothic', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000;
+    color: #fff;
 }
 
 .container {
-  max-width: 800px;
-  margin: auto;
-  background: #fff;
-  padding: 30px;
-  border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
-header {
-  text-align: center;
-  margin-bottom: 30px;
-  border-bottom: 3px dashed #ffd166; /* 발랄한 점선 */
-  padding-bottom: 20px;
+h1 {
+    color: #f00;
+    font-size: 3em;
+    text-shadow: 0 0 10px #f00;
 }
 
-header h1 {
-  color: #ef476f; /* 포인트 컬러 */
-  font-size: 3em;
-  margin-bottom: 0;
+p {
+    color: #ccc;
 }
 
-.character-section {
-  margin-bottom: 40px;
-  padding: 20px;
-  border: 2px solid #06d6a0; /* 캐릭터 섹션 테두리 */
-  border-radius: 10px;
+.privacy-notice {
+    font-size: 0.8em;
+    color: #666;
+    margin-top: 5px;
 }
 
-.character-section h2 {
-  color: #118ab2;
-  text-align: center;
-  font-size: 2.2em;
-  margin-top: 0;
-}
-
-.character-intro p {
-    background-color: #f0f8ff;
+textarea {
+    width: 80%;
+    height: 100px;
+    background-color: #111;
+    border: 1px solid #333;
+    color: #fff;
     padding: 10px;
-    border-radius: 5px;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-li {
-  background: #fffbe6;
-  margin-bottom: 10px;
-  padding: 10px;
-  border-radius: 5px;
-  font-size: 1.1em;
+    margin-top: 20px;
 }
 
 button {
-  display: block;
-  width: 100%;
-  padding: 15px;
-  font-size: 1.2em;
-  color: #fff;
-  background-color: #ef476f;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 20px;
-  transition: background-color 0.3s ease;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid #f00;
+    border-radius: 5px;
+    background-color: #000;
+    color: #f00;
+    margin-top: 20px;
+    transition: all 0.3s ease;
 }
 
 button:hover {
-  background-color: #d64063;
+    background-color: #f00;
+    color: #000;
+    box-shadow: 0 0 15px #f00;
 }
 
-.gif-container {
-  margin-top: 20px;
-  text-align: center;
+#echo-chamber {
+    margin-top: 30px;
+    height: 100px;
+    position: relative;
 }
 
-.gif-container img {
-  max-width: 100%;
-  border: 5px solid #ffd166;
-  border-radius: 10px;
+.echo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: fadeOut 5s forwards;
+    font-size: 1.2em;
+    color: #aaa;
 }
 
-/* 폰트 CDN 추가 - HTML에 직접 넣는 대신 CSS에서 import */
-@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+.anger-image {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: anger-animation 2s forwards;
+    z-index: 9999;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: translate(-50%, 0) scale(1);
+    }
+    to {
+        opacity: 0;
+        transform: translate(-50%, -100px) scale(1.5);
+    }
+}
+
+@keyframes anger-animation {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.5);
+    }
+    50% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1.2) rotate(10deg);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.5) rotate(-10deg);
+    }
+}
